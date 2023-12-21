@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display&display=swap');
+
+:root {
+    /* colors */
+    --main-color: #771f1f;
+    --second-color: #c2a878;
+    --terciary-color: #f5f5dc;
+    --text-color: #333333;
+    /*fonts*/
+    --main-font: 'Playfair Display', serif;
+    --text-font: 'Lato', sans-serif;
+    /* font size */
+    --title-size: 30px;
+    --subtitle-size: 22px;
+    --text-size: 16px;
+    --subtext-size: 14px;
+    /* spacing */
+    --button-border-size: 2px;
+    --button-spacing: 15px 30px;
+    --main-spacing: 20px;
+    /* main button */
+    --primary-btn-bg: var(--main-color);
+    --primary-btn-text: #ffffff;
+    --primary-btn-hover-bg: #8B3A3A;
+    /* second button */
+    --secondary-btn-bg: transparent;
+    --secondary-btn-text: var(--second-color); 
+    --secondary-btn-border: 2px solid var(--second-color);
+    --secondary-btn-hover-text: var(--text-color);
+    --secondary-btn-hover-border: #D3B06A;
+    /* all buttons */
+    --btn-font-size: 16px;
+    --btn-padding: 10px 20px;
+    --btn-transition: 0.3s;/
+}
+
