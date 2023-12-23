@@ -10,14 +10,14 @@
     --main-font: 'Playfair Display', serif;
     --text-font: 'Lato', sans-serif;
     /* font size */
-    --title-size: 30px;
-    --subtitle-size: 22px;
-    --text-size: 16px;
-    --subtext-size: 14px;
+    --title-size: 1.875rem ;
+    --subtitle-size: 1.375rem;
+    --text-size: 1rem;
+    --subtext-size: .875rem;
     /* spacing */
-    --button-border-size: 2px;
-    --button-spacing: 15px 30px;
-    --main-spacing: 20px;
+    --button-border-size: .125rem;
+    --button-spacing: .9375rem 1.875rem;
+    --main-spacing: 1.25rem;
     /* main button */
     --primary-btn-bg: var(--main-color);
     --primary-btn-text: #ffffff;
@@ -29,8 +29,8 @@
     --secondary-btn-hover-text: var(--text-color);
     --secondary-btn-hover-border: #D3B06A;
     /* all buttons */
-    --btn-font-size: 16px;
-    --btn-padding: 10px 20px;
+    --btn-font-size: 1rem;
+    --btn-padding: .625rem 1.25rem;
     --btn-transition: 0.3s;/
 }
 

@@ -58,9 +58,3 @@ p {
     color: var(--secondary-btn-hover-text);
     border-color: var(--secondary-btn-hover-border);
 }
-
-@media screen and (max-width: 767px) {
-    .primary-btn {
-        display: none;
-    }
-}
