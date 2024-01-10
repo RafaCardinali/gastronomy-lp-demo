@@ -37,6 +37,10 @@
     /* all buttons */
     --btn-font-size: 1rem;
     --btn-padding: .625rem 1.25rem;
-    --btn-transition: 0.3s;/
+    --btn-transition: 0.3s;
+
+    /* hamburguer submenu */
+    --hamburguer-submenu-color-focus: #960000;
+    
 }
 
