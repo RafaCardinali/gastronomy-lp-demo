@@ -1,17 +1,11 @@
 @import url(variables.css);
 @import url(button.css);
 @import url(topbar.css);
-@import url(hamburguer.css);
+@import url(menu.css);
 
 * {
     padding: 0;
     margin: 0;
-}
-
-.logo {
-    max-height: 2.375rem;
-    border: .1875rem solid var(--second-color);
-    border-radius: .25rem;
 }
 
 h1 {
@@ -21,7 +15,7 @@ h1 {
 }
 
 h2 {
-    color: var(--second-color);
+    color: var(--secondary-color);
     font-size: var(--subtitle-size);
     font-family: var(--text-font);
 }

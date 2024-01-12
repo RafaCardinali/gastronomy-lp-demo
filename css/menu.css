@@ -1,5 +1,11 @@
 @import url(variables.css);
 
+.logo {
+    max-height: 2.375rem;
+    border: .1875rem solid var(--secondary-color);
+    border-radius: .25rem;
+}
+
 .header {
     display: none;
 }
@@ -34,7 +40,6 @@
 
 .hamburguer__content__main__item {
     list-style: none;
-
 }
 
 .hamburguer__content__main__item a {
@@ -45,7 +50,7 @@
     text-decoration: none;
     background-color: var(--main-color);
     padding: 0.625rem;
-    border-bottom: 0.1875rem solid var(--second-color);
+    border-bottom: 0.1875rem solid var(--secondary-color);
     color: white;
     font-family: var(--text-font);
     font-size: 1rem;
@@ -53,19 +58,22 @@
 }
 
 .hamburguer__content__main__item a:focus {
-    color: var(--second-color);
+    color: var(--secondary-color);
     background-color: var(--primary-btn-hover-bg);
 }
 
-.hamburguer__content__main__item_dropdown {
-    display: none; /* Esconde os submenus inicialmente */
-    /* Estilos para os submenus */
+.hamburguer__content__main__item__dropdown {
+    display: none;
+    
+}
+
+.hamburguer__content__main__item__dropdown li a {
     background-color: #630b0b;
 }
 
-.hamburguer__content__main__item_dropdown:focus {
+.hamburguer__content__main__item__dropdown li a:focus {
     background-color: var(--hamburguer-submenu-color-focus);
-    color: var(--second-color);
+    color: var(--secondary-color);
 }
 
 @media screen and (min-width: 1200px) {
@@ -79,7 +87,6 @@
 
     .flexbox-container {
         display: flex;
-
         justify-content: space-between;
         align-items: center;
     }
@@ -108,7 +115,7 @@
     }
 
     .header__content__main__item a:hover {
-        color: var(--second-color);
+        color: var(--secondary-color);
     }
 
     .header__content__main__item__dropdown li {
@@ -119,7 +126,6 @@
         visibility: hidden;
         opacity: 0;
         transition: visibility 0s linear 0.3s, opacity 0.3s linear;
-        /* top: 2.1875rem; */
         position: absolute;
         background-color: var(--main-color);
     }
@@ -140,14 +146,14 @@
     }
 
     .header__content__main__item a:focus {
-        color: var(--second-color);
+        color: var(--secondary-color);
         outline: none;
-        box-shadow: 0 0 0 .125rem var(--main-color), 0 0 0 .25rem var(--second-color);
+        box-shadow: 0 0 0 .125rem var(--main-color), 0 0 0 .25rem var(--secondary-color);
     }
 
     .header__content__main__item__dropdown a:focus {
         background-color: var(--primary-btn-hover-bg);
-        box-shadow: 0 0 0 .125rem var(--main-color), 0 0 0 .25rem var(--second-color);
+        box-shadow: 0 0 0 .125rem var(--main-color), 0 0 0 .25rem var(--secondary-color);
     }
 
     .header__content__main__item:focus-within .header__content__main__item__dropdown {
