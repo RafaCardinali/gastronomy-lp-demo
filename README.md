@@ -12,6 +12,7 @@ O projeto é uma LP focada em gastronomia para aperfeiçoar minhas habilidades e
 
 - Dropdown
 - Carrosel
+- Hamburguer
 
 ## Considerações
 

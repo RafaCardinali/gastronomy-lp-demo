@@ -3,7 +3,7 @@
 :root {
     /* colors */
     --main-color: #771f1f;
-    --second-color: #c2a878;
+    --secondary-color: #c2a878;
     --terciary-color: #f5f5dc;
     --text-color: #333333;
     
@@ -29,14 +29,18 @@
 
     /* secondary button */
     --secondary-btn-bg: transparent;
-    --secondary-btn-text: var(--second-color); 
-    --secondary-btn-border: 2px solid var(--second-color);
+    --secondary-btn-text: var(--secondary-color); 
+    --secondary-btn-border: 2px solid var(--secondary-color);
     --secondary-btn-hover-text: var(--text-color);
     --secondary-btn-hover-border: #D3B06A;
 
     /* all buttons */
     --btn-font-size: 1rem;
     --btn-padding: .625rem 1.25rem;
-    --btn-transition: 0.3s;/
+    --btn-transition: 0.3s;
+
+    /* hamburguer submenu */
+    --hamburguer-submenu-color-focus: #960000;
+    
 }
 
