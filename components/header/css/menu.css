@@ -1,4 +1,4 @@
-@import url(variables.css);
+@import url(../../variables/css/variables.css);
 
 .logo {
     max-height: 2.375rem;
@@ -64,7 +64,6 @@
 
 .hamburguer__content__main__item__dropdown {
     display: none;
-    
 }
 
 .hamburguer__content__main__item__dropdown li a {

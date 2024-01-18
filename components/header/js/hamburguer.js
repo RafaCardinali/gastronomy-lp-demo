@@ -6,7 +6,7 @@ const hamburguerItemDropdown = document.querySelectorAll('.hamburguer__content__
 
 function handleHamburguerContentVisibility () {
     hamburguerContent.style.display = hamburguerContent.style.display === 'block' ? 'none' : 'block';
-};
+}
 
 function toggleHamburguerIconColor () {
     hamburguerButton.style.color = hamburguerContent.style.display === 'block' ? secondaryColor : '';
