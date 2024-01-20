@@ -12,6 +12,7 @@ h1 {
     color: var(--main-color);
     font-size: var(--title-size);
     font-family: var(--main-font);
+    height: 200vh;
 }
 
 h2 {
