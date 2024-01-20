@@ -1,4 +1,4 @@
-@import url(variables.css);
+@import url(../../variables/css/variables.css);
 
 .topbar {
     display: none;
@@ -25,7 +25,6 @@
         display: flex;
         gap: 1.5625rem;
         align-items: center;
-
     }
 
     .topbar__content__main__item a {

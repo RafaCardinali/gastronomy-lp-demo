@@ -1,7 +1,7 @@
-@import url(variables.css);
-@import url(button.css);
-@import url(topbar.css);
-@import url(menu.css);
+@import url(components/variables/css/variables.css);
+@import url(components/button/css/button.css);
+@import url(components/topbar/css/topbar.css);
+@import url(components/header/css/menu.css);
 
 * {
     padding: 0;
