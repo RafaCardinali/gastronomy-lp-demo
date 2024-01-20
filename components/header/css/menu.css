@@ -19,7 +19,7 @@
     border-top: .125rem solid var(--secondary-color);
 }
 
-.flexbox-container.is-sticky {
+.flexbox-container.sticky-header {
     position: fixed;
     width: auto;
     top: 0;
@@ -27,7 +27,7 @@
     right: 0;
 }
 
-main.header-is-sticky {
+main.sticky-main {
     margin-top: 4.75rem;
 }
 
@@ -104,7 +104,7 @@ main.header-is-sticky {
         position: relative;
     }
 
-    .flexbox-container.is-sticky {
+    .flexbox-container.sticky-header {
         position: fixed;
         width: auto;
         top: 0;
@@ -112,7 +112,7 @@ main.header-is-sticky {
         right: 0;
     }
 
-    main.header-is-sticky {
+    main.sticky-main {
         margin-top: 4.75rem;
     }
 

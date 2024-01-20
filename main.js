@@ -3,5 +3,5 @@ require(['components/header/js/hamburguer.js'], function(hamburguer) {
 });
 
 require(['components/header/js/sticky-header.js'], function(stickyHeader) {
-    stickyHeader.initAllToggleClass();
+    stickyHeader.initStickyHeader();
 });
