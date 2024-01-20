@@ -16,6 +16,19 @@
     align-items: center;
     padding: .625rem 2rem;
     background-color: var(--main-color);
+    border-top: .125rem solid var(--secondary-color);
+}
+
+.flexbox-container.is-sticky {
+    position: fixed;
+    width: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+main.header-is-sticky {
+    margin-top: 4.75rem;
 }
 
 .hamburguer__content {
@@ -88,6 +101,19 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative;
+    }
+
+    .flexbox-container.is-sticky {
+        position: fixed;
+        width: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    main.header-is-sticky {
+        margin-top: 4.75rem;
     }
 
     .header__content__main {
