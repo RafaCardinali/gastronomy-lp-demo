@@ -18,39 +18,30 @@ define(function () {
     return window.scrollY;
   }
 
-  function toggleClassHeader() {
+  function toggleClasses(element, stickyClass) {
     const currentScroll = getCurrentScroll();
     if (!isMobile) {
-      currentScroll > topbarHeigth
-        ? header.classList.add(stickyHeaderClass)
-        : header.classList.remove(stickyHeaderClass);
+        currentScroll > topbarHeigth ? element.classList.add(stickyClass) : element.classList.remove(stickyClass);
     } else {
-      header.classList.add(stickyHeaderClass);
+        element.classList.add(stickyClass);
     }
   }
 
-  function toggleClassMain() {
-    const currentScroll = getCurrentScroll();
-    if (!isMobile) {
-      currentScroll > topbarHeigth
-        ? main.classList.add(stickyMainClass)
-        : main.classList.remove(stickyMainClass);
-    } else {
-      main.classList.add(stickyMainClass);
-    }
+  function toggleStickyClasses() {
+    toggleClasses(header, stickyHeaderClass);
+    toggleClasses(main, stickyMainClass);
   }
 
-  function initEventListeners() {
-    window.addEventListener("scroll", toggleClassMain);
-    window.addEventListener("scroll", toggleClassHeader);
-  }
+  function initToggleStickyClasses() {
+    window.addEventListener("scroll", function() {
+        toggleStickyClasses();
+    });
+
+    toggleStickyClasses();
+}
 
   function initStickyHeader() {
-    initEventListeners();
-
-    // Applies the functions when the page is loaded
-    toggleClassHeader();
-    toggleClassMain();
+    initToggleStickyClasses();
   }
 
    return {
