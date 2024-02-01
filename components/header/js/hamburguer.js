@@ -3,9 +3,7 @@ define(function () {
   const secondaryColor = rootStyle.getPropertyValue("--secondary-color").trim();
   const hamburguerButton = document.querySelector(".hamburguer__icon");
   const hamburguerContent = document.querySelector(".hamburguer__content");
-  const hamburguerItemDropdown = document.querySelectorAll(
-    ".hamburguer__content__main__item a"
-  );
+  const hamburguerItemDropdown = document.querySelectorAll(".hamburguer__content__main__item a");
 
   function handleHamburguerContentVisibility() {
     hamburguerContent.style.display =
@@ -62,12 +60,37 @@ define(function () {
     });
   }
 
+  function handleHamburguerContentOutsideClick(event) {
+    if(!event.target.closest(".hamburguer__content") && !event.target.closest(".hamburguer__icon")) {
+      if(hamburguerContent.style.display === "block") {
+        hamburguerContent.style.display = "none";
+        hamburguerButton.style.color = "";
+        resetSubmenus();
+      }
+    }
+  }
+
+  function resetSubmenus() {
+    hamburguerItemDropdown.forEach(function (dropdown) {
+      const submenuDropdown = dropdown.nextElementSibling;
+      if(submenuDropdown) {
+        submenuDropdown.style.display = "none";
+      }
+
+      const submenuIcon = dropdown.querySelector(".material-symbols-outlined");
+      if(submenuIcon) {
+        submenuIcon.textContent = "add";
+      }
+    });
+  }
+
   function initHamburguer() {
     hamburguerButton.addEventListener("click", showHamburguerMenu);
     setupDropdownListeners(hamburguerItemDropdown);
+    document.addEventListener("click", handleHamburguerContentOutsideClick);
   }
 
   return {
-    initHamburguer: initHamburguer
-    };
+    initHamburguer: initHamburguer,
+  };
 });
